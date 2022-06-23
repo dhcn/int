@@ -1,0 +1,46 @@
+[package]
+name = "int"
+version = "0.1.2"
+authors = ["hayden <dhcn@163.com>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+rand = "0.7.3"
+ws = { version = "0.9.1", features = ["ssl"] }
+log = "0.4.0"
+env_logger = "0.8.3"# for ws
+url = "2.1.1"
+# websocket = "0.24.0"
+# The engine APIs, including the Serialize and Deserialize traits. Always
+# required when using Serde. The "derive" feature is only required when
+# using #[derive(Serialize, Deserialize)] to make Serde work with structs
+# and enums defined in your crate.
+
+# restson = "^0.6"
+serde = { version = "1.0", features = ["derive"] }
+
+# Each data format lives in its own crate; the sample code below uses JSON
+# but you may be using a different one.
+serde_json = "1.0"
+serde_derive = "1.0"
+#
+#hyper = "0.13"
+#bytes = "0.5" # for hyper
+reqwest = { version = "0.11.0",features = ["blocking"] }
+
+openssl = "0.10.30" # for wss
+# inflate = "0.4.5" #for unpress
+flate2 = "1.0.19" #compression/decompression
+chrono = "0.4" #for datetime
+lazy_static = "1.4.0"
+
+crossbeam-channel = "0.5"
+
+rust_decimal = "1.10.1"
+
+[dev-dependencies]
+# env_logger = "0.6"
+
+

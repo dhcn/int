@@ -1,4 +1,5 @@
-# INT项目文档
+# INT
+> intelligent tradebot
 
 ## 架构设计
 ### 系统设计
